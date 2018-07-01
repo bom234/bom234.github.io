@@ -14,6 +14,7 @@ const filesToCache = [
   './icon-app.png',
   './icon-app1.png',
   './icon-app2.png',
+  './sel.png',
 ];
 self.addEventListener('install', e => {
   console.log('[ServiceWorker] Install');
