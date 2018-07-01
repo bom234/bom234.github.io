@@ -1,0 +1,78 @@
+<html lang="en">
+
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <link rel="manifest" href="manifest.json">
+
+  <title>Currency Converter</title>
+  
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css" type="text/css">
+  <script src="index.js"></script>
+
+  <link rel="shortcut icon" href="icon-kola.png">
+</head>
+
+<body >
+
+
+<div class="container" id="app"> 
+  <div class="row" >
+    <h1 align="center">Currency Converter</h1><br><br>
+
+
+<table align="center">
+  
+<tr><td> <div class="input-group">
+               <span class="input-group-addon">Amonut</span>
+      <input  class="form-control" id="amount" name="amount" type="number" placeholder="Enter amount"  value="1"   size="19" />
+    </div> </td> <td>
+      Convert From
+      <div class="styled-select yellow rounded">
+      <select  id="from_currency" class="fromCurrency"  >   
+      </select>
+    </div>
+    </td>
+<tr>       <br> <td>  
+<div class="input-group">
+               <span class="input-group-addon">Original</span>
+      <input  class="form-control" id="original_amount" name="original_amount" type="text" readonly placeholder="Original Amount"  /></div>
+
+
+</td>  <td>   Convert To<div class="styled-select yellow rounded">
+      <select  id="to_currency" class="toCurrency"  >
+        
+        
+        
+      </select></div>
+    </td> <tr><td><div class="input-group" >
+               <span class="input-group-addon"  >Result</span>
+<input type="text"  class="form-control"  id="converted_amount" name="converted_amount" readonly placeholder="Result"  size="20" />
+
+
+              </div>
+
+
+
+
+      </td><td><button class="convert">Convert Currency</button></td> </div></tr></tr>
+      
+  
+</table>
+
+
+
+  </div>
+</div>
+
+
+
+
+
+  
+  
+</body>
+
+</html>
