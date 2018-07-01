@@ -3,7 +3,7 @@
 const cacheName = 'static-cache-v2';
 
 const filesToCache = [
-  './Currency-convert-kola/',
+  './',
   './index.html',
   './manifest.json',
   './style.css',
