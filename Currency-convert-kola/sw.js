@@ -3,15 +3,17 @@
 const cacheName = 'static-cache-v2';
 
 const filesToCache = [
-  './',
+  './Currency-convert-kola/',
   './index.html',
   './manifest.json',
   './style.css',
   './style.css.map',
-  './icon-kola.png',
+  './icon-fav.png',
   './index.js',
   './index.js.map',
   './icon-app.png',
+  './icon-app1.png',
+  './icon-app2.png',
 ];
 self.addEventListener('install', e => {
   console.log('[ServiceWorker] Install');
@@ -23,7 +25,7 @@ self.addEventListener('install', e => {
   );
 });
 self.addEventListener('activate', e => {
-  console.log('[ServiceWorker] Activate');
+  console.log('[ServiceWorker] Activated');
   e.waitUntil(
     caches.keys().then(keyList =>
       Promise.all(
